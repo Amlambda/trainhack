@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Trainhack2017</string>
+    <string name="action_settings">Settings</string>
+    <string name="string_bom_SO">Bom vid St Olofsgatan</string>
+    <string name="string_bom_SP">Bom vi St Persgatan</string>
+    <string name="string_titel">Bominformation</string>
+</resources>
