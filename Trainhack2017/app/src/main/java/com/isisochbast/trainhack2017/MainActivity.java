@@ -1,23 +1,21 @@
 package com.isisochbast.trainhack2017;
 
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
+import android.os.Handler;
+import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
+import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.util.ArrayList;
+import static java.lang.Thread.sleep;
+
 
 public class MainActivity extends AppCompatActivity {
 
     TextView mTextViewBomSOEdit;
     TextView mTextViewBomSPEdit;
+    ImageView mImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         mTextViewBomSPEdit = (TextView) findViewById(R.id.text_view_info_bomSP);
-
+//mImageView = (ImageView) findViewById(R.id.image_view_bom);
         //Om bommen är uppe
         String textBom = "Nästa bom går ner om".concat(" hämta data från API ").concat("minuter");
 
@@ -39,6 +37,22 @@ public class MainActivity extends AppCompatActivity {
 
         mTextViewBomSPEdit.setText(textBom);
         mTextViewBomSOEdit.setText(textBom);
+
+
+        AnimationDrawable animation = new AnimationDrawable();
+        animation.addFrame(getResources().getDrawable(R.drawable.left_red), 1000);
+        animation.addFrame(getResources().getDrawable(R.drawable.right_red), 1000);
+        animation.setOneShot(false);
+
+        ImageView imageAnim =  (ImageView) findViewById(R.id.image_view_bom);
+        imageAnim.setBackgroundDrawable(animation);
+
+        // start the animation!
+        animation.start();
+
+
+
+
 
 
     }
