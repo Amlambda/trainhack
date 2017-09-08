@@ -1,0 +1,52 @@
+package com.isisochbast.trainhack2017;
+
+import java.util.Calendar;
+import java.util.Date;
+
+/**
+ * Created by amandanorberg on 2017-09-08.
+ */
+
+
+public class SingleBom {
+    private String id;
+    private String name;
+
+    public SingleBom(String id){
+        this.id = id;
+        this.name = "En bom";
+    }
+
+    private String getName(){
+        //Hämta detta någonstans??
+        return this.name;
+    }
+
+    public String getId(){
+        return this.id;
+    }
+
+    private Calendar getTimeGoingDown(){
+        Calendar timeDown = Calendar.getInstance();
+        //hämta info från API med id?
+        return timeDown;
+    }
+
+    private Calendar getTimeGoingUp(){
+        Calendar timeUp = Calendar.getInstance();
+        //hämta info från API med id?
+        return timeUp;
+    }
+
+    private int totTimeDown(){
+        int goingDown = this.getTimeGoingDown().MINUTE;
+        int goingUp = this.getTimeGoingUp().MINUTE;
+        int timeDown;
+        if(goingUp > goingDown){
+            timeDown = goingUp - goingDown;
+        }else{
+            timeDown = goingDown - goingUp;
+        }
+        return timeDown;
+    }
+}
