@@ -20,8 +20,10 @@ import java.net.URL;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView mTextViewBomSOEdit;
+    TextView mTextViewBomSODown;
     TextView mTextViewBomSPEdit;
+    TextView mTextViewBomSOUp;
+    TextView mTextViewBomSOTime;
 
     TextView mTextViewBomSOTitle;
     TextView mTextViewBomSPTitle;
@@ -39,9 +41,13 @@ public class MainActivity extends AppCompatActivity {
         Bom1 = new SingleBom("S:t Olofsgatan");
         Bom2 = new SingleBom("S:t Persgatan");
 
-        mTextViewBomSOEdit = (TextView) findViewById(R.id.text_view_info_bomSO);
+        mTextViewBomSODown = (TextView) findViewById(R.id.text_view_info_down_bomSO);
         mTextViewBomSPEdit = (TextView) findViewById(R.id.text_view_info_bomSP);
 
+
+        mTextViewBomSOUp = (TextView) findViewById(R.id.text_view_info_up_bomSO);
+
+        mTextViewBomSOTime = (TextView) findViewById(R.id.text_view_time_bomSO);
 
         mTextViewBomSOTitle = (TextView) findViewById(R.id.text_view_bom_SO);
         mTextViewBomSPTitle = (TextView) findViewById(R.id.text_view_bom_SP);
@@ -50,17 +56,19 @@ public class MainActivity extends AppCompatActivity {
 //mImageView = (ImageView) findViewById(R.id.image_view_bom);
 
         //Om bommen är uppe
-        String textBom = "Nästa bom går ner om".concat(" hämta data från API ").concat("minuter");
-
+        String textBomNer = "Bommen går ner om".concat(" " + Bom1.totTimeDown()).concat(" min");
+        String textBomUpp = "Bommen går upp om".concat(" " + Bom1.totTimeDown()).concat(" min");
         String bom1Id = Bom1.getId();
         //Om bommen är nere
 
         //String textBom = "Bommen går upp om".concat(" hämta data från API ").concat("minuter");
 
-        mTextViewBomSPEdit.setText(textBom);
-        mTextViewBomSOEdit.setText(textBom);
+        mTextViewBomSPEdit.setText(textBomNer);
+        mTextViewBomSODown.setText(textBomNer);
 
-        mTextViewBomSOTitle.setText(bom1Id);
+        mTextViewBomSOUp.setText(textBomUpp);
+
+        mTextViewBomSOTime.setText("  " + Bom1.totTimeDown()+" min");
 
 
         AnimationDrawable animation = new AnimationDrawable();

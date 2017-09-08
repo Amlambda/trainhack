@@ -10,18 +10,6 @@
     tools:context="com.isisochbast.trainhack2017.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView
-        android:id="@+id/text_view_titel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/string_titel"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1"
-        app:layout_constraintHorizontal_bias="0.501" />
 
     <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/layout_bom_SO"
@@ -44,8 +32,8 @@
 
         <TextView
             android:id="@+id/text_view_bom_SO"
-            android:layout_width="146dp"
-            android:layout_height="19dp"
+            android:layout_width="95dp"
+            android:layout_height="20dp"
             android:text="@string/string_bom_SO"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -56,9 +44,9 @@
             android:layout_marginTop="16dp" />
 
         <TextView
-            android:id="@+id/text_view_info_bomSO"
-            android:layout_width="149dp"
-            android:layout_height="22dp"
+            android:id="@+id/text_view_info_down_bomSO"
+            android:layout_width="175dp"
+            android:layout_height="21dp"
             android:text="hoooho"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -71,9 +59,9 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintHorizontal_bias="0.228" />
         <TextView
-            android:id="@+id/text_view_info_2_bomSO"
-            android:layout_width="147dp"
-            android:layout_height="21dp"
+            android:id="@+id/text_view_info_up_bomSO"
+            android:layout_width="175dp"
+            android:layout_height="20dp"
             android:text="hiiiiho"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"

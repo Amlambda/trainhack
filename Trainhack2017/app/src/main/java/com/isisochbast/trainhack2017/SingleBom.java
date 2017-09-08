@@ -49,7 +49,8 @@ public class SingleBom {
         }else{
             timeDown = goingDown - goingUp;
         }
-        return timeDown;
+        //return timeDown;
+        return 4;
     }
 
 }
