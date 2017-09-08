@@ -1,5 +1,6 @@
 package com.isisochbast.trainhack2017;
 
+import java.net.HttpURLConnection;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -16,6 +17,11 @@ public class SingleBom {
         this.id = id;
         this.name = "En bom";
     }
+
+
+
+
+
 
     private String getName(){
         //Hämta detta någonstans??
@@ -49,4 +55,5 @@ public class SingleBom {
         }
         return timeDown;
     }
+
 }
