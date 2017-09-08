@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.isisochbast.trainhack2017.MainActivity"
     tools:showIn="@layout/activity_main">
@@ -51,24 +52,61 @@
             tools:layout_constraintLeft_creator="1"
             tools:layout_constraintRight_creator="1"
             tools:layout_constraintTop_creator="1"
-            android:layout_marginTop="33dp" />
-
-        <TextView
-            android:id="@+id/text_view_info_bomSO"
-            android:layout_width="226dp"
-            android:layout_height="36dp"
-            android:text="hohohooooooooooooooooooooooooooooooo"
-            app:layout_constraintHorizontal_bias="0.502"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:layout_constraintLeft_creator="1"
-            tools:layout_constraintRight_creator="1"
+            android:layout_marginTop="16dp" />
+        <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/layout_bom_SO"
+            android:background="?attr/colorPrimary"
+            android:layout_width="288dp"
+            android:layout_height="118dp"
+            android:orientation="horizontal"
             tools:layout_constraintTop_creator="1"
-            android:layout_marginTop="69dp"
-            android:layout_marginLeft = "@dimen/text_horizontal_margin"
-            android:layout_marginRight = "@dimen/text_horizontal_margin"
-            tools:layout_editor_absoluteY="58dp" />
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintBottom_creator="1"
+            app:layout_constraintBottom_toTopOf="@+id/layout_bom_SP"
+            app:layout_constraintRight_toRightOf="@+id/layout_bom_SP"
+            android:layout_marginTop="60dp"
+            tools:layout_constraintLeft_creator="1"
+            android:layout_marginBottom="27dp"
+            app:layout_constraintLeft_toLeftOf="@+id/layout_bom_SP"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.316"
+            tools:layout_editor_absoluteY="47dp"
+            tools:layout_editor_absoluteX="4dp">
+
+
+
+            <TextView
+                android:id="@+id/text_view_info_bomSO"
+                android:layout_width="178dp"
+                android:layout_height="32dp"
+                android:text="hohohooooooooooooooooooooooooooooooo"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1"
+                tools:layout_constraintTop_creator="1"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft = "@dimen/text_horizontal_margin"
+                android:layout_marginRight = "@dimen/text_horizontal_margin"
+                tools:layout_editor_absoluteY="1dp" />
+
+            <TextView
+                android:id="@+id/time_bom_SO"
+                android:layout_width="83dp"
+                android:layout_height="32dp"
+                android:text="3min"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1"
+                tools:layout_constraintTop_creator="1"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintHorizontal_bias="0.975" />
+        </android.support.constraint.ConstraintLayout>
     </android.support.constraint.ConstraintLayout>
 
     <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
