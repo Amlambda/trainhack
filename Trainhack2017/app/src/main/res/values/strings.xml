@@ -4,4 +4,5 @@
     <string name="string_bom_SO">Bom vid St Olofsgatan</string>
     <string name="string_bom_SP">Bom vi St Persgatan</string>
     <string name="string_titel">Bominformation</string>
+    <string name="minutes"> min</string>
 </resources>

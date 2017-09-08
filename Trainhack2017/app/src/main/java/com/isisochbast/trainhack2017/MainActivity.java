@@ -27,8 +27,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Bom1 = new SingleBom("999");
-        Bom2 = new SingleBom("222");
+        Bom1 = new SingleBom("S:t Olofsgatan");
+        Bom2 = new SingleBom("S:t Persgatan");
 
         mTextViewBomSOEdit = (TextView) findViewById(R.id.text_view_info_bomSO);
         mTextViewBomSPEdit = (TextView) findViewById(R.id.text_view_info_bomSP);

@@ -17,7 +17,7 @@ public class SingleBom {
         this.name = "En bom";
     }
 
-    private String getName(){
+    public String getName(){
         //Hämta detta någonstans??
         return this.name;
     }
@@ -26,19 +26,19 @@ public class SingleBom {
         return this.id;
     }
 
-    private Calendar getTimeGoingDown(){
+    public Calendar getTimeGoingDown(){
         Calendar timeDown = Calendar.getInstance();
         //hämta info från API med id?
         return timeDown;
     }
 
-    private Calendar getTimeGoingUp(){
+    public Calendar getTimeGoingUp(){
         Calendar timeUp = Calendar.getInstance();
         //hämta info från API med id?
         return timeUp;
     }
 
-    private int totTimeDown(){
+    public int totTimeDown(){
         int goingDown = this.getTimeGoingDown().MINUTE;
         int goingUp = this.getTimeGoingUp().MINUTE;
         int timeDown;
