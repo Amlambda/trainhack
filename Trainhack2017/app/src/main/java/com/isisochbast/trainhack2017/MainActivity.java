@@ -56,8 +56,8 @@ public class MainActivity extends AppCompatActivity {
 //mImageView = (ImageView) findViewById(R.id.image_view_bom);
 
         //Om bommen är uppe
-        String textBomNer = "Bommen går ner om".concat(" " + Bom1.totTimeDown()).concat(" min");
-        String textBomUpp = "Bommen går upp om".concat(" " + Bom1.totTimeDown()).concat(" min");
+        String textBomNer = "Går ner om".concat(" " + Bom1.totTimeDown()).concat(" min");
+        String textBomUpp = "Går upp om".concat(" " + Bom1.totTimeDown()).concat(" min");
         String bom1Id = Bom1.getId();
         //Om bommen är nere
 
